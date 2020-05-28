@@ -52,6 +52,17 @@ tray-detach = false
 
 inherit = bar/base
 
+[bar/secondary]
+monitor = DP-0
+dpi = 144
+height = 46
+
+modules-left = i3
+modules-center = date
+modules-right = xkeyboard
+
+inherit = bar/base
+
 [module/xkeyboard]
 type = internal/xkeyboard
 blacklist-0 = num lock
@@ -134,7 +145,7 @@ label = %percentage_used%%
 
 [module/lan]
 type = internal/network
-interface = eth0
+interface = enp6s0
 interval = 3.0
 
 format-connected = "  <label-connected>"

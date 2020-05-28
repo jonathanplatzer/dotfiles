@@ -44,7 +44,7 @@ height = 46
 
 modules-left = i3
 modules-center = date
-modules-right = memory cpu filesystem temperature volume lan xkeyboard
+modules-right = memory cpu filesystem temperature volume wlan battery xkeyboard
 
 tray-position = right
 tray-padding = 2
@@ -146,7 +146,7 @@ label-disconnected-foreground = ${colors.alert}
 
 [module/wlan]
 type = internal/network
-interface = wlan0
+interface = wlp58s0
 interval = 3.0
 
 format-connected =  <label-connected>

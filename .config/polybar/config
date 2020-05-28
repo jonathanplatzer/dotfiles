@@ -175,7 +175,7 @@ format-volume-prefix = " "
 
 format-muted = "Mute"
 format-muted-foreground = ${colors.alert}
-format-muted-prefix = " "
+format-muted-prefix = "  "
 
 [module/temperature]
 type = internal/temperature

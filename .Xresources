@@ -1,0 +1,24 @@
+Xft.dpi: 120
+Xft.autohint: false
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintfull
+Xft.hinting: true
+Xft.rgba: rgba
+
+URxvt.perl-ext-common: default,matcher,resize-font
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+
+URxvt.iso14755: False
+
+#define terminal_font   xft:DejaVuSansMono Nerd Font Mono:size=10
+
+URxvt*scrollBar: false
+URxvt*font: terminal_font
+!URxvt*letterSpace: -1
+
+Urxvt*scrollTtyKeyPress: true
+Urxvt*scrollTtyOutput: false
+URxvt*visualBell: true
+
+rofi.font: DejaVuSansMono Nerd Font Mono 16

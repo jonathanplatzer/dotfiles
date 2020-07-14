@@ -25,6 +25,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'sheerun/vim-polyglot'
 Plug 'ziglang/zig.vim'
 
+Plug 'rhysd/vim-clang-format'
+
 call plug#end()
 
 " This is needed to overwrite the complete option
@@ -159,3 +161,8 @@ autocmd FileType {c,cpp,h,hpp} setlocal commentstring=\/\/\ %s
 "  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
 "  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 "augroup END
+
+" vim-clang-format
+" -------------------------------------
+let g:clang_format#detect_style_file = 1
+autocmd FileType c,cpp ClangFormatAutoEnable

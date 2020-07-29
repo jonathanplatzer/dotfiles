@@ -179,11 +179,9 @@ format-muted-prefix = "  "
 
 [module/temperature]
 type = internal/temperature
-# asuswmisensors: CPU Temerature
-#hwmon-path = /sys/devices/platform/asus-wmi-sensors/hwmon/hwmon0/temp1_input
-# k10temp: Tdie
-hwmon-path = /sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon2/temp1_input
-warn-temperature = 70
+# coretemp 0
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon5/temp1_input
+warn-temperature = 80
 
 format = <ramp> <label>
 format-warn = <ramp> <label-warn>

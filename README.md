@@ -4,7 +4,7 @@ This repo contains all my dotfiles. It is modeled after harfangk's excellent [bl
 
 ## Structure
 
-The `master` branch only contains `README.md`, which is used for documentation purposes, and left out of the other branches.
+The `main` branch only contains `README.md`, which is used for documentation purposes, and left out of the other branches.
 
 The `base` branch contains all dotfiles which are used everywhere without any modifications on a per machine level, like my zsh or neovim configs.
 

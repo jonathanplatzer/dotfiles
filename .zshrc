@@ -51,7 +51,7 @@ ZSH_CUSTOM=$HOME/.oh-my-zsh/custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git fzf docker docker-compose docker-machine)
+plugins=(git fzf docker docker-compose docker-machine zig)
 
 
 # User configuration
@@ -101,14 +101,15 @@ DEFAULT_USER=$USER
 alias find='fd'
 alias xclip='xclip -sel clip'
 alias dotfiles='git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME'
+compdef dotfiles='git'
 
 if [[ -f $HOME/.cache/wal/color.sh ]]; then
   source $HOME/.cache/wal/colors.sh
 fi
 
 # extend path for my shell scripts
-PATH="$HOME/bin:$PATH"
-PATH="$HOME/.local/bin:$PATH"
+PATH="$PATH:$HOME/bin"
+PATH="$PATH:$HOME/.local/bin"
 
 # use neovim everywhere as editor
 export EDITOR="nvim"

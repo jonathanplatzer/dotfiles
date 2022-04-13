@@ -91,6 +91,7 @@ bindsym $mod+a focus parent
 set $ws1 1:www
 set $ws2 2
 set $ws9 9:steam
+set $ws10 10:comms
 
 # bind workspace to output
 workspace $ws1 output DP-2
@@ -105,7 +106,7 @@ bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace $ws9
-bindsym $mod+0 workspace 10
+bindsym $mod+0 workspace $ws10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
@@ -117,10 +118,12 @@ bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace $ws9
-bindsym $mod+Shift+0 move container to workspace 10
+bindsym $mod+Shift+0 move container to workspace $ws10
 
+# open programms on predefined workspaces
 assign [class="google-chrome"] $ws1
 assign [class="Steam"] $ws9
+assign [class="discord"] $ws10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload

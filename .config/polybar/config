@@ -113,6 +113,7 @@ label-urgent-background = ${colors.secondary}
 
 ws-icon-0 = 1:www;
 ws-icon-1 = 9:steam;
+ws-icon-2 = 10:comms;
 
 ws-icon-default = 
 

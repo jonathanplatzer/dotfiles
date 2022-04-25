@@ -44,13 +44,19 @@ height = 46
 
 modules-left = i3
 modules-center = date
-modules-right = memory cpu filesystem temperature volume lan xkeyboard
+modules-right = memory cpu filesystem temperature volume lan xkeyboard lock
 
 tray-position = right
 tray-padding = 2
 tray-detach = false
 
 inherit = bar/base
+
+[module/lock]
+type = custom/text
+content = " "
+
+click-left = lock
 
 [module/xkeyboard]
 type = internal/xkeyboard

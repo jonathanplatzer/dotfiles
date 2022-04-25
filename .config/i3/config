@@ -124,6 +124,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 assign [class="google-chrome"] $ws1
 assign [class="Steam"] $ws9
 assign [class="discord"] $ws10
+assign [class="Ferdium"] $ws10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
